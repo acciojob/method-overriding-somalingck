@@ -15,11 +15,16 @@ public class Main {
     }
 
     public static void main(String[] args) {
+        // Task 3
         B b = new B();
-        System.out.println(b.meth());
+        String result1 = b.meth(); // Store the result of method call
 
-        B b1 = new B();
-        System.out.println(b1.meth());
+        // Task 4
+        A a = new B(); // Polymorphism: Reference of type A, object of type B
+        String result2 = a.meth(); // Store the result of method call
+
+        // Output the results (optional)
+        System.out.println("Result 1: " + result1);
+        System.out.println("Result 2: " + result2);
     }
-
 }
