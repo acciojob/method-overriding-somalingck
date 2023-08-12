@@ -17,14 +17,12 @@ public class Main {
     public static void main(String[] args) {
         // Task 3
         B b = new B();
-        String result1 = b.meth(); // Store the result of method call
+        String resultFromA = b.meth(); // Calling meth() method of class A with object of class B
+        System.out.println("Result from method of class A: " + resultFromA);
 
         // Task 4
-        A a = new B(); // Polymorphism: Reference of type A, object of type B
-        String result2 = a.meth(); // Store the result of method call
-
-        // Output the results (optional)
-        System.out.println("Result 1: " + result1);
-        System.out.println("Result 2: " + result2);
+        B b1 = new B();
+        String resultFromB = b1.meth(); // Calling overridden meth() method from object of class B
+        System.out.println("Result from overridden method of class B: " + resultFromB);
     }
 }
